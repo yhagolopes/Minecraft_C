@@ -1,0 +1,122 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-sy0i1k
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_aa690/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_aa690.dir\build.make CMakeFiles/cmTC_aa690.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-sy0i1k'
+Building C object CMakeFiles/cmTC_aa690.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\cmTC_aa690.dir\src.c.obj -c D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-sy0i1k\src.c
+D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-sy0i1k\src.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_aa690.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_aa690.dir/src.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_aa690.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-sy0i1k'
+Makefile:126: recipe for target 'cmTC_aa690/fast' failed
+mingw32-make.exe: *** [cmTC_aa690/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-kgh86h
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_608f5/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_608f5.dir\build.make CMakeFiles/cmTC_608f5.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-kgh86h'
+Building C object CMakeFiles/cmTC_608f5.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\cmTC_608f5.dir\CheckFunctionExists.c.obj -c D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-kgh86h\CheckFunctionExists.c
+Linking C executable cmTC_608f5.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_608f5.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_608f5.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_608f5.dir/objects.a @CMakeFiles\cmTC_608f5.dir\objects1
+C:\MinGW\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\cmTC_608f5.dir/objects.a -Wl,--no-whole-archive -o cmTC_608f5.exe -Wl,--out-implib,libcmTC_608f5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_608f5.dir\linkLibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_608f5.dir\build.make:99: recipe for target 'cmTC_608f5.exe' failed
+mingw32-make.exe[1]: *** [cmTC_608f5.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-kgh86h'
+Makefile:126: recipe for target 'cmTC_608f5/fast' failed
+mingw32-make.exe: *** [cmTC_608f5/fast] Error 2
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-2r2tjv
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_89b38/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_89b38.dir\build.make CMakeFiles/cmTC_89b38.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-2r2tjv'
+Building C object CMakeFiles/cmTC_89b38.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\cmTC_89b38.dir\CheckFunctionExists.c.obj -c D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-2r2tjv\CheckFunctionExists.c
+Linking C executable cmTC_89b38.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_89b38.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_89b38.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_89b38.dir/objects.a @CMakeFiles\cmTC_89b38.dir\objects1
+C:\MinGW\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\cmTC_89b38.dir/objects.a -Wl,--no-whole-archive -o cmTC_89b38.exe -Wl,--out-implib,libcmTC_89b38.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_89b38.dir\linkLibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthread
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_89b38.dir\build.make:99: recipe for target 'cmTC_89b38.exe' failed
+mingw32-make.exe[1]: *** [cmTC_89b38.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-2r2tjv'
+Makefile:126: recipe for target 'cmTC_89b38/fast' failed
+mingw32-make.exe: *** [cmTC_89b38/fast] Error 2
+
+
+
+Determining if the include file dinput.h exists failed with the following output:
+Change Dir: D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-7grjxo
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5b896/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5b896.dir\build.make CMakeFiles/cmTC_5b896.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-7grjxo'
+Building C object CMakeFiles/cmTC_5b896.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_5b896.dir\CheckIncludeFile.c.obj -c D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-7grjxo\CheckIncludeFile.c
+D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-7grjxo\CheckIncludeFile.c:1:20: fatal error: dinput.h: No such file or directory
+ #include <dinput.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_5b896.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_5b896.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5b896.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-7grjxo'
+Makefile:126: recipe for target 'cmTC_5b896/fast' failed
+mingw32-make.exe: *** [cmTC_5b896/fast] Error 2
+
+
+
+Determining if the include file xinput.h exists failed with the following output:
+Change Dir: D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-724wdw
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ee5d9/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ee5d9.dir\build.make CMakeFiles/cmTC_ee5d9.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-724wdw'
+Building C object CMakeFiles/cmTC_ee5d9.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_ee5d9.dir\CheckIncludeFile.c.obj -c D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-724wdw\CheckIncludeFile.c
+D:\Progamming\Minecarft\Build\CMakeFiles\CMakeScratch\TryCompile-724wdw\CheckIncludeFile.c:1:20: fatal error: xinput.h: No such file or directory
+ #include <xinput.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_ee5d9.dir\build.make:76: recipe for target 'CMakeFiles/cmTC_ee5d9.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_ee5d9.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Progamming/Minecarft/Build/CMakeFiles/CMakeScratch/TryCompile-724wdw'
+Makefile:126: recipe for target 'cmTC_ee5d9/fast' failed
+mingw32-make.exe: *** [cmTC_ee5d9/fast] Error 2
+
+
+

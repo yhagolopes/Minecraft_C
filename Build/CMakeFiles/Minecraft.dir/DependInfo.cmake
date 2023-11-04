@@ -1,0 +1,33 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Progamming/Minecarft/Src/App.cpp" "CMakeFiles/Minecraft.dir/Src/App.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/App.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Camera.cpp" "CMakeFiles/Minecraft.dir/Src/Camera.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Camera.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Main.cpp" "CMakeFiles/Minecraft.dir/Src/Main.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Main.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Player.cpp" "CMakeFiles/Minecraft.dir/Src/Player.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Player.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Renderer.cpp" "CMakeFiles/Minecraft.dir/Src/Renderer.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Renderer.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Shader.cpp" "CMakeFiles/Minecraft.dir/Src/Shader.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Shader.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/Texture.cpp" "CMakeFiles/Minecraft.dir/Src/Texture.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/Texture.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/TextureAtlas.cpp" "CMakeFiles/Minecraft.dir/Src/TextureAtlas.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/TextureAtlas.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/World/Block.cpp" "CMakeFiles/Minecraft.dir/Src/World/Block.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/World/Block.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/World/Chunk.cpp" "CMakeFiles/Minecraft.dir/Src/World/Chunk.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/World/Chunk.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/World/ChunkMesh.cpp" "CMakeFiles/Minecraft.dir/Src/World/ChunkMesh.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/World/ChunkMesh.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/World/Generation.cpp" "CMakeFiles/Minecraft.dir/Src/World/Generation.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/World/Generation.cpp.obj.d"
+  "D:/Progamming/Minecarft/Src/World/World.cpp" "CMakeFiles/Minecraft.dir/Src/World/World.cpp.obj" "gcc" "CMakeFiles/Minecraft.dir/Src/World/World.cpp.obj.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "D:/Progamming/Minecarft/Build/Lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "D:/Progamming/Minecarft/Build/Lib/glad/CMakeFiles/glad.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

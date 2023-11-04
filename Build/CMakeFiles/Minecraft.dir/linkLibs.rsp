@@ -1,0 +1,1 @@
+ Lib/glfw/src/libglfw3.a Lib/glad/libglad.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
